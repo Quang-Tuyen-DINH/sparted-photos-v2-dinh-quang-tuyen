@@ -35,7 +35,7 @@ export const PhotosList = () => {
       return m(infinite, {
         pageData: Photos,
         processPageData,
-        autoSize: false
+        autoSize: true
       });
     }
   };

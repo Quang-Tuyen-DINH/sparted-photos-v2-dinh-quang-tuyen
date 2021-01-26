@@ -5,7 +5,7 @@ const randomPhotos = (pageNum) => {
     .request({
       method: "GET",
       dataType: "jsonp",
-      url: `https://picsum.photos/v2/list?page=${pageNum}&limit=20`
+      url: `https://picsum.photos/v2/list?page=${pageNum}&limit=10`
     })
     .then((result) => {
       let photosLength = result.length;
