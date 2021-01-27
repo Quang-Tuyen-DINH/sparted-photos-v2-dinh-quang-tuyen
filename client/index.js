@@ -1,13 +1,13 @@
 import m from 'mithril';
-import { PhotosList } from './controllers/PhotosList';
+import { photosList } from './controllers/PhotosList';
 import "../public/styles.css";
 
-const App = () => {
+const app = () => {
   return {
     view: () =>
-      m(PhotosList, {
+      m(photosList, {
       })
   };
 };
 
-m.mount(document.body, App);
+m.mount(document.body, app);

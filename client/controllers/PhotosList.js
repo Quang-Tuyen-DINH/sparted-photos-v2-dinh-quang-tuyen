@@ -3,7 +3,7 @@ import infinite from "mithril-infinite";
 import imagesLoaded from "imagesloaded";
 import randomPhotos from "../models/Photos";
 
-const Photos = (pageNum) => {
+const photos = (pageNum) => {
   const photos = randomPhotos(pageNum);
   return photos;
 };
@@ -29,11 +29,11 @@ const processPageData = (content, options) => {
   );
 };
 
-export const PhotosList = () => {
+export const photosList = () => {
   return {
     view: () => {
       return m(infinite, {
-        pageData: Photos,
+        pageData: photos,
         processPageData,
         autoSize: true
       });
