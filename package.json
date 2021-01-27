@@ -5,12 +5,14 @@
     "build": "fsbin emptyDir build && fsbin copy public build && webpack --config webpack.build.js",
     "clean": "fsbin emptyDir build",
     "dev": "webpack-dev-server --config webpack.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest test/**"
   },
   "dependencies": {
+    "chai": "^4.2.0",
     "imagesloaded": "^4.1.4",
     "mithril": "^2.0.4",
-    "mithril-infinite": "^1.2.11"
+    "mithril-infinite": "^1.2.11",
+    "mocha": "^8.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -23,6 +25,11 @@
     "css-loader": "^5.0.1",
     "dotenv": "^7.0.0",
     "fsbin": "^1.0.8",
+    "jest": "^26.6.3",
+    "jsdom": "^16.4.0",
+    "mithril-jest": "^1.0.3",
+    "mithril-query": "^4.0.0-next.2",
+    "ospec": "^4.1.1",
     "style-loader": "^2.0.0",
     "to-string-loader": "^1.1.6",
     "webpack": "^4.39.0",

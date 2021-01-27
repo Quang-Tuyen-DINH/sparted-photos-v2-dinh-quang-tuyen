@@ -17,8 +17,17 @@ const randomPhotos = (pageNum) => {
         const j = Math.floor(Math.random() * (i + 1));
         [preBuffer[i], preBuffer[j]] = [preBuffer[j], preBuffer[i]];
       }
+
+      //For testing array of randomly placed photos
+      // function onlyUnique(value, index, self) {
+      //   return self.indexOf(value) === index;
+      // }
+      // let unique = preBuffer.filter(onlyUnique);
+      // console.log(unique);
       return Promise.resolve(preBuffer);
     });
 };
+
+
 
 export default randomPhotos;

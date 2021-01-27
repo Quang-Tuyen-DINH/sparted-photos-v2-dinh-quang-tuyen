@@ -1,5 +1,5 @@
 import m from 'mithril';
-import { photosList } from './controllers/PhotosList';
+import { photosList } from './controllers/photosList';
 import "../public/styles.css";
 
 const app = () => {
